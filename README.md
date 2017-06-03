@@ -1,2 +1,2 @@
 # MEAN-ToDo-App
-Node/Express
+Node.js, Express, Webpack, Babel/ES6...
