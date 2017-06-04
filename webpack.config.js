@@ -25,6 +25,10 @@ module.exports = {
                 query: {
                     presets: ['es2015']
                 }
+            },
+            {
+                test: /\.html$/,
+                loader: 'raw'
             }
         ]
     },
@@ -38,4 +42,5 @@ module.exports = {
             '*': 'http://localhost:3000'
         }
     }
-};
+}
+;

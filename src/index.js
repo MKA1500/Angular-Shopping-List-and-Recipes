@@ -1,3 +1,4 @@
-const message = "The entry file works well";
+import angular from 'angular';
+import appModule from 'config';
 
-console.log(message);
+angular.bootstrap(document, [appModule.name]);
