@@ -20,3 +20,5 @@ app.all('/*', function(req, res) {
 app.listen(PORT, function() {
     console.log('Server running on ' + PORT);
 });
+
+/* npm run dev */
