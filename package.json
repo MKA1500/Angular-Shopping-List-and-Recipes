@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/MKA1500/MEAN-ToDo-App/issues"
   },
-  "homepage": "https://github.com/MKA1500/MEAN-ToDo-App#readme"
+  "homepage": "https://github.com/MKA1500/MEAN-ToDo-App#readme",
+  "dependencies": {
+    "mongoose": "^5.0.10"
+  }
 }

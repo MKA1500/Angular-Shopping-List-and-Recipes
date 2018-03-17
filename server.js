@@ -13,6 +13,13 @@ app.get('/api/posts', function(req, res){
   ]);
 });
 
+app.post('/api/posts', function(req, res){
+  console.log('the post has been received!');
+  console.log(req.body.username);
+  console.log(req.body.body);
+  res.send(201);
+});
+
 app.listen(3000, function(){
   console.log('Server is running at port 3000')
 });
