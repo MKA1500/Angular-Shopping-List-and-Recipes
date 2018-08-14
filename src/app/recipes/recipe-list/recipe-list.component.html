@@ -4,14 +4,17 @@
   </div>
 </div>
 <div class="row">
-  <div class="col-12">
-    <a href="#" class="list-group-item clearfix">
+  <div class="col-12 the-list">
+    <a
+      href="#"
+      class="list-group-item clearfix"
+      *ngFor="let recipe of recipes">
       <div class="pull-left">
-        <h4 class="list-group-item-heading">Recipe Name</h4>
-        <p class="list-group-item-text">Description</p>
+        <h4 class="list-group-item-heading">{{ recipe.name }}</h4>
+        <p class="list-group-item-text">{{ recipe.description }}</p>
       </div>
       <span class="pull-right image-wrap">
-        <img src="http://bi.im-g.pl/im/b9/ab/16/z23770809IF,Mojito-to-doskonaly-sposob-na-orzezwienie-w-cieple.jpg" alt="" class="img-fluid" />
+        <img [src]="recipe.imagePath" alt="{{ recipe.name }}" class="img-fluid" />
       </span>
     </a>
     <app-recipe-item></app-recipe-item>
