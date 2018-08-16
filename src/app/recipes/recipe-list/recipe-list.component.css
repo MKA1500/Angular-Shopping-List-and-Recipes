@@ -10,6 +10,10 @@
   flex: 1;
 }
 
+.btn.new-repice {
+  margin-bottom: 1rem;
+}
+
 .image-wrap img {
-  max-height: 110px;
+  max-height: 7rem;
 }
