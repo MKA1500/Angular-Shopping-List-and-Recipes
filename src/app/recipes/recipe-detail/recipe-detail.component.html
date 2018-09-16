@@ -1,0 +1,35 @@
+<div class="row">
+  <div class="col-12">
+    <img [src]="recipe.imagePath" alt="{{ recipe.name }}" class="img-fluid" />
+  </div>
+</div>
+<div class="row">
+  <div class="col-12">
+    <h1>{{ recipe.name }}</h1>
+  </div>
+</div>
+<div class="row">
+  <div class="col-12">
+    <div class="btn-group" role="group">
+      <button
+        type="button"
+        class="btn btn-success">Add to Shopping List</button>
+      <button
+        type="button"
+        class="btn btn-primary">Edit Recipe</button>
+      <button
+        type="button"
+        class="btn btn-danger">Delete Recipe</button>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-12">
+    {{ recipe.description }}
+  </div>
+</div>
+<div class="row">
+  <div class="col-12">
+    Ingredients
+  </div>
+</div>
