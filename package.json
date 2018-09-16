@@ -1,22 +1,15 @@
 {
-  "name": "socialmediaapp",
+  "name": "REST-API-Playlist",
   "version": "1.0.0",
-  "description": "MEAN Social Media App",
-  "devDependencies": {
-    "body-parser": "^1.18.2",
-    "express": "^4.16.3"
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/MKA1500/MEAN-ToDo-App.git"
-  },
+  "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/MKA1500/MEAN-ToDo-App/issues"
-  },
-  "homepage": "https://github.com/MKA1500/MEAN-ToDo-App#readme",
   "dependencies": {
-    "mongoose": "^5.0.10"
+    "express": "^4.16.3"
   }
 }
