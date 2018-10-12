@@ -18,12 +18,16 @@
           #amountInput>
       </div>
       <div class="col-md-5 buttons-group">
-        <button
+        <a
+          href="#"
           class="btn btn-success"
-          type="submit"
-          (click)="onAddItem()">Add</button>
-        <button class="btn btn-danger" type="button">Delete</button>
-        <button class="btn btn-primary" type="button">Clear</button>
+          (click)="onAddItem($event)">Add</a>
+        <a
+          href="#"
+          class="btn btn-danger">Delete</a>
+        <a
+          href="#"
+          class="btn btn-primary">Clear</a>
       </div>
     </form>
   </div>

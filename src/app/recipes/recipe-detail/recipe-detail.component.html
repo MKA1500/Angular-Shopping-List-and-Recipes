@@ -23,13 +23,18 @@
     </div>
   </div>
 </div>
-<div class="row">
+<div class="row my-3">
   <div class="col-12">
     {{ recipe.description }}
   </div>
 </div>
 <div class="row">
   <div class="col-12">
-    Ingredients
+    <span
+      *ngFor="let ingredient of recipe.ingredients"
+      class="badge badge-warning">
+      {{ ingredient.name }}
+      <span class="badge badge-light">{{ ingredient.amount }}</span>
+    </span>
   </div>
 </div>

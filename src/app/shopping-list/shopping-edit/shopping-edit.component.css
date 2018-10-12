@@ -3,9 +3,10 @@
   display: flex;
   padding-bottom: 1rem;
 }
-.buttons-group button {
+.buttons-group a {
+  display: inline-block;
   margin-left: 0.5rem;
 }
-.buttons-group button:first-child {
+.buttons-group a:first-child {
   margin-left: 0;
 }
