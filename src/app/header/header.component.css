@@ -5,3 +5,11 @@
 .dropdown.open .dropdown-menu {
   display: block;
 }
+
+.nav-item {
+  padding-top: .15rem;
+}
+
+.active .nav-link {
+  color: #007bff;
+}
