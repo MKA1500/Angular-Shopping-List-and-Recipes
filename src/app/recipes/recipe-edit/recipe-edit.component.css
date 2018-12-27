@@ -1,0 +1,12 @@
+.btn-danger.cancel {
+  margin-left: 5px;
+}
+.image-container {
+  height: 7rem;
+}
+.image-container img {
+  height: 7rem;
+}
+.delete {
+  width: 100%;
+}
