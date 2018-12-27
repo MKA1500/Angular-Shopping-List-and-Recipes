@@ -2,7 +2,7 @@ import { Ingredient } from '../shared/ingredient.model';
 import { Subject } from 'rxjs/Subject';
 
 export class ShoppingListService {
-  ingredientsChange = new Subject<Ingredient[]>();
+  ingredientsChanged = new Subject<Ingredient[]>();
   startedEditing = new Subject<number>();
   private ingredients: Ingredient[] = [
     new Ingredient('Apples', 5),
@@ -14,16 +14,16 @@ export class ShoppingListService {
     // return copy:
     return this.ingredients.slice();
     // but in this case we will need to inform our component that some new data
-    // is available => ingredientsChange
+    // is available => ingredientsChanged
   }
 
-  getSingleIngredient(index: number) {
+  getIngredient(index: number) {
     return this.ingredients[index];
   }
 
   addIngredient(ingredient: Ingredient) {
     this.ingredients.push(ingredient);
-    this.ingredientsChange.next(this.ingredients.slice());
+    this.ingredientsChanged.next(this.ingredients.slice());
   }
 
   addIngredients(ingredients: Ingredient[]) {
@@ -32,6 +32,16 @@ export class ShoppingListService {
     // }
     // this above would emit many events, so:
     this.ingredients.push(...ingredients);
-    this.ingredientsChange.next(this.ingredients.slice());
+    this.ingredientsChanged.next(this.ingredients.slice());
+  }
+
+  updateIngredient(index: number, newIngredient: Ingredient) {
+    this.ingredients[index] = newIngredient;
+    this.ingredientsChanged.next(this.ingredients.slice());
+  }
+
+  deleteIngredient(index: number) {
+    this.ingredients.splice(index, 1);
+    this.ingredientsChanged.next(this.ingredients.slice());
   }
 }
