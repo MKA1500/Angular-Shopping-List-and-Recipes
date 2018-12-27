@@ -3,10 +3,10 @@
   display: flex;
   padding-bottom: 1rem;
 }
-.buttons-group a {
+.buttons-group button {
   display: inline-block;
   margin-left: 0.5rem;
 }
-.buttons-group a:first-child {
+.buttons-group button:first-child {
   margin-left: 0;
 }

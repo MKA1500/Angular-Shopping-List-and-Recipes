@@ -1,7 +1,9 @@
 import { Ingredient } from '../shared/ingredient.model';
 import { Subject } from 'rxjs/Subject';
+
 export class ShoppingListService {
   ingredientsChange = new Subject<Ingredient[]>();
+  startedEditing = new Subject<number>();
   private ingredients: Ingredient[] = [
     new Ingredient('Apples', 5),
     new Ingredient('Herbes de Provence', 1),
@@ -13,6 +15,10 @@ export class ShoppingListService {
     return this.ingredients.slice();
     // but in this case we will need to inform our component that some new data
     // is available => ingredientsChange
+  }
+
+  getSingleIngredient(index: number) {
+    return this.ingredients[index];
   }
 
   addIngredient(ingredient: Ingredient) {
