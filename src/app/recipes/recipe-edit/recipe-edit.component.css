@@ -10,3 +10,6 @@
 .delete {
   width: 100%;
 }
+.ingredient-row {
+  margin-top: .5rem;
+}
