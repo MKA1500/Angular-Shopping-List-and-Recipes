@@ -54,12 +54,21 @@
                   class="btn btn-danger delete">Delete</button>
               </div>
             </div>
+            <div class="row">
+              <div class="col-12">
+                <button
+                  class="btn btn-success add-ing-btn"
+                  type="button"
+                  (click)="onAddIngredient()">Add Ingredient</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
       <button
         type="submit"
-        class="btn btn-success">Save</button>
+        class="btn btn-success"
+        [disabled]="!recipeForm.valid">Save</button>
       <button
         type="button"
         class="btn btn-danger cancel">Cancel</button>
