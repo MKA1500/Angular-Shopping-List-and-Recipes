@@ -15,10 +15,11 @@
           type="text"
           id="imagePath"
           formControlName="imagePath"
-          class="form-control">
+          class="form-control"
+          #imagePath>
       </div>
       <div class="image-container">
-        <img src="" class="img-fluid">
+        <img [src]="imagePath.value" class="img-fluid">
       </div>
       <div class="form-group">
         <textarea
@@ -51,7 +52,8 @@
               <div class="col-3">
                 <button
                   type="button"
-                  class="btn btn-danger delete">Delete</button>
+                  class="btn btn-danger delete"
+                  (click)="onDeleteIngredient(i)">Delete</button>
               </div>
             </div>
             <div class="row">
