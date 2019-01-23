@@ -1,4 +1,3 @@
-const Joi = require('joi');
 const express = require('express');
 const app = express();
 
@@ -11,23 +10,7 @@ app.use(function(req, res, next) {
 });
 
 
-let servers = [
-    {
-      name: 'Testserver',
-      capacity: 10,
-      id: 1
-    },
-    {
-      name: 'Liveserver',
-      capacity: 100,
-      id: 2
-    },
-    {
-      name: 'Liveserver 2',
-      capacity: 90,
-      id: 3
-    }
-  ];
+let recipes = [];
 
 let apiTest = {};
 
@@ -43,7 +26,7 @@ app.get('/api/http-test', (req, res) => {
 app.get('/', (req, res) => {
   res.send('Hello World!');
 });
-
+/*
 app.get('/api/servers', (req, res) => {
   res.send(servers);
 });
@@ -70,16 +53,7 @@ app.post('/api/servers', (req, res) => {
   };
   servers.push(server);
   res.send(server);
-  // const schema = {
-  //   name: Joi.string().min(3).required()
-  // };
-  //
-  // const result = Joi.validate(req.body, schema);
-  // if (result.error) {
-  //   res.status(400).send(result.error);
-  //   return;
-  // }
 });
-
+*/
 const port = process.env.PORT || 3000;
 app.listen(port, () => console.log(`Listening on port ${port}...`))
