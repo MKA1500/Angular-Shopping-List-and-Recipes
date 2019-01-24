@@ -17,3 +17,7 @@ a:hover {
 .active .nav-link {
   color: #007bff;
 }
+
+.btn.fetch {
+  margin-left: .5rem;
+}

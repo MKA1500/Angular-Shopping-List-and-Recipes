@@ -7,6 +7,6 @@ export class DataStorageService {
   constructor(private http: Http, private recipeService: RecipeService) {}
 
   storeRecipes() {
-    this.http.put();
+    return this.http.post('http://localhost:3000/api/recipes', this.recipeService.getRecipes());
   }
 }

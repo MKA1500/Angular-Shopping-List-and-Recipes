@@ -14,12 +14,12 @@ let recipes = [];
 
 let apiTest = {};
 
-app.post('/api/http-test', (req, res) => {
+app.post('/api/recipes', (req, res) => {
   apiTest = req.body;
   res.send('POSTED:' + apiTest);
 });
 
-app.get('/api/http-test', (req, res) => {
+app.get('/api/recipes', (req, res) => {
   res.send(apiTest);
 });
 
