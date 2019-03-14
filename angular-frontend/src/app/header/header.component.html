@@ -19,15 +19,16 @@
         </li>
       </ul>
       <div class="pull-right">
-        <a
+        <button
           routerLink="/signup"
-          class="btn btn-primary">Sign Up</a>
-        <a
+          class="btn btn-primary"
+          disabled>Sign Up</button>
+        <button
           class="btn btn-success"
-          (click)="onSaveData()">Save Data</a>
-        <a
+          (click)="onSaveData()">Save Data</button>
+        <button
           class="btn btn-warning fetch"
-          (click)="onFetchData()">Fetch Data</a>
+          (click)="onFetchData()">Fetch Data</button>
       </div>
   </div>
 </nav>
