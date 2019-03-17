@@ -20,6 +20,5 @@ a:hover {
 
 .btn,
 a:not([href]):not([tabindex]) {
-  color: #FFF;
   margin-left: .5rem;
 }
