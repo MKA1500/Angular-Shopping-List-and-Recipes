@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import 'rxjs/Rx';
 
 import { RecipeService } from '../recipes/recipe.service';
@@ -12,7 +12,12 @@ export class DataStorageService {
 
 
   storeRecipes() {
-    return this.httpClient.post('http://localhost:3000/api/recipes', this.recipeService.getRecipes());
+    const token = "someToken123"
+    return this.httpClient.post<Recipe[]>('http://localhost:3000/api/recipes', this.recipeService.getRecipes(), {
+      observe: 'body',
+      // params: new HttpParams().set('auth', token)
+      // headers: new HttpHeaders().set('Authorization', '4656765746');
+    });
   }
 
   getRecipes() {

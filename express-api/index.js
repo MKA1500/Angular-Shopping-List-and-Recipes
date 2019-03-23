@@ -16,7 +16,7 @@ let apiTest = {};
 
 app.post('/api/recipes', (req, res) => {
   apiTest = req.body;
-  res.send('POSTED:' + apiTest);
+  res.send(apiTest);
 });
 
 app.get('/api/recipes', (req, res) => {
