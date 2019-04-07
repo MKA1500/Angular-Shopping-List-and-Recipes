@@ -6,7 +6,12 @@
 .buttons-group button {
   display: inline-block;
   margin-left: 0.5rem;
+  margin-bottom: 20px;
 }
 .buttons-group button:first-child {
   margin-left: 0;
+}
+.mat-form-field,
+.mat-form-field-infix {
+  width: 100%;
 }
