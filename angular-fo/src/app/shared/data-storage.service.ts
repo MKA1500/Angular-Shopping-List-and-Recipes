@@ -1,8 +1,6 @@
-
-import {map} from 'rxjs/operators';
+import { map } from 'rxjs';
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
-import 'rxjs/Rx';
 
 import { RecipeService } from '../recipes/recipe.service';
 import { Recipe } from '../recipes/recipe.model';

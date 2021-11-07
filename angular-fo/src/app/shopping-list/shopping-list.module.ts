@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { MatInputModule,
-         MatButtonModule } from '@angular/material';
+import { MatButtonModule } from '@angular/material/button';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 import { ShoppingListComponent } from './shopping-list.component';
 import { ShoppingEditComponent } from './shopping-edit/shopping-edit.component';
@@ -15,8 +15,8 @@ import { ShoppingEditComponent } from './shopping-edit/shopping-edit.component';
   imports: [
     CommonModule,
     FormsModule,
-    MatInputModule,
-    MatButtonModule
+    MatButtonModule,
+    MatFormFieldModule
   ]
 })
 export class ShoppingListModule {}
